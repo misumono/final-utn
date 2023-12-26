@@ -1,0 +1,122 @@
+:root {
+    --azul: #2a3990;
+    --rosa: #ff87b0;
+    --rosa2: #f06292;
+    --magenta: #d23369;
+    --violaceo: #9c254d;
+}
+
+body {
+    margin:0;
+    height:100%;
+    font-family: arial;
+    font-weight: 600;
+    padding-top: 15vh;
+    background-color: #e7e7e7;
+    font-family: 'rubik';
+}
+
+nav {
+    background-color: var(--azul);
+    height: 13vh; width:100%; 
+    position: fixed; top:0; z-index: 9999;
+    border-bottom:solid 5px white;
+    box-shadow: 0px 5px 10px #7a7a7a;
+
+    display: flex; box-sizing: border-box;
+    padding: 2% 8% 2% 8%;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+#logo {
+    font-size: 20px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap:15%;
+}
+
+.clicked {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    cursor:auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+a:hover:not(.clicked) {
+    color: var(--rosa);
+    transition: .4s;
+    transform: scalex(1.05) scaley(1.15);
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e7e7e7;
+    padding: 4% 0 12% 0;
+}
+
+#presentation > h1 {
+    font-size: 60px;
+    margin-bottom: 0;
+}
+
+#presentation > h3 {
+    font-size: 22px;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    background-color: #cfcfcf;
+    padding: 4% 10%;
+    gap: 50px; /*¿por qué no funciona el %?*/
+    font-size: 32px;
+    border-top: solid 1px #bababa;
+}
+
+.info {
+   display: flex;
+   align-items: center;
+   gap: 10%;
+}
+
+.info:nth-child(2n) {
+    flex-direction: row-reverse;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    background-color: #333;
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-size: 14px; letter-spacing: 1px;
+    font-weight: 400;
+    padding: 5% 5%
+}
+
+#mails {
+    line-height: 2.2;
+}
+
+.marked {
+    background-color: var(--rosa);
+    color: white; padding: 2px 5px;
+}

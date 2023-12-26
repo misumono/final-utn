@@ -1,0 +1,122 @@
+:root {
+    --azul: #2a3990;
+    --rosa: #ff87b0;
+    --rosa2: #f06292;
+    --magenta: #d23369;
+    --violaceo: #9c254d;
+}
+
+body {
+    margin:0;
+    height:100%;
+    font-family: arial; font-weight: 600;
+    padding-top: 15vh;
+    background-color: #cfcfcf;
+    font-family: 'rubik';
+    background-image: url(madera.jpg);
+}
+
+nav {
+    background-color: var(--azul);
+    height: 13vh; width:100%; 
+    position: fixed; top:0; z-index: 9999;
+    border-bottom:solid 5px white;
+    box-shadow: 0px 5px 10px #222;
+
+    display: flex; box-sizing: border-box;
+    padding: 2% 8% 2% 8%;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+#logo {
+    font-size: 20px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap:15%;
+}
+
+.clicked {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    cursor:auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+a:hover:not(.clicked) {
+    color: var(--rosa);
+    transition: .4s;
+    transform: scalex(1.05) scaley(1.15);
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    background-image: url(madera.jpg);
+    background-color: #cfcfcf;
+    align-items: flex-start;
+    padding: 1% 20% 2% 2%;
+    gap: 10px; /*¿por qué no funciona el %?*/
+}
+
+.profe {
+    display: flex;
+    width: 100%; padding:3%;
+    align-items: center;
+    background-color: white;
+    border-radius: 20px;
+    gap: 6%;
+    box-shadow: 7px 9px 21px #222;
+}
+
+.imagen {
+    display: flex; flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    border: solid 2px #eee;
+    padding:10px
+}
+
+img {
+    max-width: 150px; aspect-ratio: 1;
+}
+
+.profe > p {
+    font-family: monospace; font-weight: 100;
+    font-size: 15px; line-height: 1.6;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    background-color: #333;
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-size: 14px; letter-spacing: 1px;
+    font-weight: 400;
+    padding: 5% 5%
+}
+
+#mails {
+    line-height: 2.2;
+}
+
+.marked {
+    background-color: var(--rosa);
+    color: white; padding: 2px 5px;
+}

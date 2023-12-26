@@ -1,0 +1,169 @@
+:root {
+    --azul: #2a3990;
+    --rosa: #ff87b0;
+    --rosa2: #f06292;
+    --magenta: #d23369;
+    --violaceo: #9c254d;
+}
+
+body {
+    margin:0;
+    height:100%;
+    font-family: arial; font-weight: 600;
+    padding-top: 15vh;
+    background-color: #cfcfcf;
+    font-family: 'rubik';
+}
+
+nav {
+    background-color: var(--azul);
+    height: 13vh; width:100%; 
+    position: fixed; top:0; z-index: 9999;
+    border-bottom:solid 5px white;
+    box-shadow: 0px 5px 10px #7a7a7a;
+
+    display: flex; box-sizing: border-box;
+    padding: 2% 8% 2% 8%;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+#logo {
+    font-size: 20px;
+}
+
+#links {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap:15%;
+}
+
+.clicked {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    cursor:auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+a:hover:not(.clicked) {
+    color: var(--rosa);
+    transition: .4s;
+    transform: scalex(1.05) scaley(1.15);
+}
+
+#middle {
+    display: flex; flex-direction: column;
+    align-items: center; gap:15%;
+    margin:5%; gap:30px;
+}
+
+#bullets {
+    display: flex;
+    justify-content: center;
+    gap:50px;
+}
+
+.bullet {
+    height: 32px; aspect-ratio: 1;
+    background-color: #777; color:#ddd;
+    display: flex;
+    justify-content: center; align-items: center;
+    border-radius: 50%; box-shadow: 1px 2px 4px#7a7a7a;
+}
+
+.on {
+    background-color: var(--azul); color:white;   
+}
+
+#forms {
+    display: flex;
+    background-color: #f0f0f0;
+    border-radius: 12px;
+    box-shadow: 4px 4px 3px #7a7a7a;
+}
+
+.step {
+    display: flex; flex-direction: column;
+    align-items:center;
+    gap: 20px;
+    margin: 40px 100px;
+}
+
+.form-line {
+    display: flex; flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap:4%;
+}
+
+input,label {width:100%}
+label {flex:1} input {flex:2}
+
+input {
+    border: 1px solid #999 ;
+    border-top: none; border-right: none;
+    border-top-right-radius:6px;
+    border-bottom-left-radius:6px;
+    background-color: #f0f0f0;
+    font-weight: 300; letter-spacing: 1px;
+}
+
+input:focus{
+    background-color: #e1e1e1;
+    outline: none;
+}
+
+#buttons {
+    display: flex;
+    width: 100%; gap:5%
+}
+
+#recibo{
+    background-color: var(--rosa);
+}
+
+#recibo:hover {
+    background-color: var(--magenta);
+}
+
+button {
+    background-color: #2a3990; color: white;
+    padding:8px; width: 100%;
+    border: none; border-radius: 6px;
+}
+button:hover {
+    background-color: #1a235c;
+    cursor: pointer;    
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3%;
+    background-color: #333;
+    height: 100%;
+    margin: 0;
+    color: white;
+    font-size: 14px; letter-spacing: 1px;
+    font-weight: 400;
+    padding: 5% 5%
+}
+
+#mails {
+    line-height: 2.2;
+}
+
+.marked {
+    background-color: var(--rosa);
+    color: white; padding: 2px 5px;
+}
