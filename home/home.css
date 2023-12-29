@@ -37,16 +37,31 @@ nav {
 
 #links {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
-    gap:15%;
+    flex-direction: row-reverse;
+    width:45%;
+    gap:10%;
 }
 
 .clicked {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
     cursor:auto;
+}
+
+#phone {
+    position: fixed;
+    left: 85%;
+    top: 75%;
+    border-radius: 30px;
+    outline: none;
+    color: #02a82e;
+    letter-spacing: 1px; 
+    border: 3px solid #01cb37;
+    padding:10px 20px;
+    box-shadow: 7px 7px 7px #7a7a7a;
+    cursor:pointer;
 }
 
 a {
@@ -67,6 +82,7 @@ a:hover:not(.clicked) {
     align-items: center;
     background-color: #e7e7e7;
     padding: 4% 0 12% 0;
+    text-align: center;
 }
 
 #presentation > h1 {
@@ -91,7 +107,7 @@ a:hover:not(.clicked) {
 .info {
    display: flex;
    align-items: center;
-   gap: 10%;
+   gap: 20px;
 }
 
 .info:nth-child(2n) {
@@ -120,3 +136,16 @@ footer {
     background-color: var(--rosa);
     color: white; padding: 2px 5px;
 }
+
+@media screen and (max-width: 700px) {
+    #logo {
+      display: none; /* Esto hará que desaparezca cuando el ancho sea menor a 600px */
+    }
+    nav {
+        justify-content: center;
+    }
+    #links {
+        width:60%;
+        justify-content: center;
+    }
+  }

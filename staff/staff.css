@@ -16,6 +16,20 @@ body {
     background-image: url(madera.jpg);
 }
 
+#phone {
+    position: fixed;
+    left: 85%;
+    top: 75%;
+    border-radius: 30px;
+    outline: none;
+    color: #02a82e;
+    letter-spacing: 1px; 
+    border: 3px solid #01cb37;
+    padding:10px 20px;
+    box-shadow: 7px 7px 7px #7a7a7a;
+    cursor:pointer;
+}
+
 nav {
     background-color: var(--azul);
     height: 13vh; width:100%; 
@@ -120,3 +134,16 @@ footer {
     background-color: var(--rosa);
     color: white; padding: 2px 5px;
 }
+
+@media screen and (max-width: 700px) {
+    #logo {
+      display: none; /* Esto hará que desaparezca cuando el ancho sea menor a 600px */
+    }
+    nav {
+        justify-content: center;
+    }
+    #links {
+        width:60%;
+        justify-content: center;
+    }
+  }

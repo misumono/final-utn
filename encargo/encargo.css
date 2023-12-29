@@ -167,3 +167,16 @@ footer {
     background-color: var(--rosa);
     color: white; padding: 2px 5px;
 }
+
+@media screen and (max-width: 700px) {
+    #logo {
+      display: none; /* Esto hará que desaparezca cuando el ancho sea menor a 600px */
+    }
+    nav {
+        justify-content: center;
+    }
+    #links {
+        width:60%;
+        justify-content: center;
+    }
+  }
